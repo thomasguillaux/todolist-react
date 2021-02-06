@@ -28,7 +28,7 @@ const Line = ({todo, todos, setTodos, index, amount, setAmount, remaining, setRe
            <button 
                 className="delete__todo" 
                 onClick={() => {
-                    {todo.status ? setRemaining(remaining) : setRemaining(remaining -1)}
+                    // {todo.status ? setRemaining(remaining) : setRemaining(remaining -1)}
                     const newTodos = [...todos]
                     newTodos.splice(index, 1)
                     setTodos(newTodos)
