@@ -28,12 +28,12 @@ const Line = ({todo, todos, setTodos, index, amount, setAmount, remaining, setRe
            <button 
                 className="delete__todo" 
                 onClick={() => {
-                    // {todo.status ? setRemaining(remaining) : setRemaining(remaining -1)}
                     const newTodos = [...todos]
                     newTodos.splice(index, 1)
                     setTodos(newTodos)
                     setAmount(amount - 1)
-                    setDone(done -1)         
+                    setDone(done -1)      
+                    setRemaining(remaining -1)   
             }}>
             <FaTrash/>
             </button>

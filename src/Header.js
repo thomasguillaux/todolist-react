@@ -21,7 +21,7 @@ const Header = ({amount, remaining, done}) => {
                     <span>Total</span>
                  </div>
                 <div>
-                    <span>{remaining}</span>
+                    <span>{remaining <=0 ? "0" : remaining}</span>
                     <span>Remaining</span>
                 </div>
                 <div>
